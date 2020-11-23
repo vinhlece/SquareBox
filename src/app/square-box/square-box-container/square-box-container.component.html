@@ -1,0 +1,8 @@
+<div class="input-container" [formGroup]="squareBoxForm">
+  <label for="input-speed">Input speed(s): </label>
+  <input id="input-speed" formControlName="speed" type="number" placeholder="Input speed" class="error"/>
+</div>
+<div class="square-box-container" (click)="choosePosition($event)">
+  <app-square-box [top]="top" [left]="left" [speed]="speed"></app-square-box>
+</div>
+
